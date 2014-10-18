@@ -1,0 +1,20 @@
+<title>Contacts list</title>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Mail</th>
+    <th>Phone</th>
+    <th colspan="3"></th>
+  </tr>
+ 
+<% @contacts.each do |contact| %>
+  <tr>
+    <td width = "130em"><%= contact.name %></td>
+    <td width = "160em"><%= contact.mail %></td>
+    <td width = "100em"><%= contact.phone %></td>
+  </tr>
+<% end %>
+
+</table>
+<br/>
+<%= link_to 'Add new contact', new_contact_path %>
