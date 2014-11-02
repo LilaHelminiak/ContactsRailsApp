@@ -40,3 +40,6 @@ gem 'spring',        group: :development
 
 # Validate e-mail format
 gem 'validates_email_format_of'
+
+#Use haml instead for erb
+gem 'haml'

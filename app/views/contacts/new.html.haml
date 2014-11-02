@@ -1,0 +1,18 @@
+%title Add new contact
+%h1 New Contact
+
+= form_for @contact do |contact| { :action => "/contacts_path", :method => "post" }
+   %p
+      = contact.label :name, 'Name'
+      = contact.text_field :name 
+
+   %p
+      = contact.label :mail, 'E-mail'
+      = contact.text_field :mail
+   %p
+      = contact.label :phone, 'Phone'
+      = contact.text_field :phone
+   %p
+      = contact.submit 'Add contact', :class => "form_submit"
+   
+= link_to 'Back to Contacts list', contacts_path

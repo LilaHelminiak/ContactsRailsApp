@@ -1,0 +1,12 @@
+%title Contact details
+%p
+   %strong Contact details:
+   = @contact.name
+
+%p
+   = @contact.mail
+   ,
+   = @contact.phone
+
+
+= link_to 'Back to Contacts list', contacts_path

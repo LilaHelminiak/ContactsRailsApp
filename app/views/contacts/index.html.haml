@@ -1,0 +1,17 @@
+%title Contacts list
+
+%table
+   %tr
+      %th Name
+      %th Mail
+      %th Phone
+   - @contacts.each do |contact|
+      %tr
+         %td{:width => "130em"} 
+            = contact.name
+         %td{:width => "160em"} 
+            = contact.mail
+         %td{:width => "100em"} 
+            = contact.phone
+            
+= link_to 'Add new contact', new_contact_path
